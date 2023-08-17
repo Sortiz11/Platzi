@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #3D246C;
+}
+
+#SelPersonaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Concert One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-personaje{
+    width: 160px;
+    height: 100px;
+    background: #5C4B99;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px;
+    border-radius: 13px;
+    display: flex;
+    color: #FFDBC3;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-personaje img{
+    width: 70px;
+}
+
+#Boton-Personaje{
+    height: 40px;
+    width: 200px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #A084E8 ;
+}
+
+#SelAtaque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-ataque{
+    background: #5C4B99;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    border-color: transparent;
+    width: 200px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+#Mesanjes{
+    width: 280px;
+    background-color: #9F91CC;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn-reiniciar{
+    border: none;
+    color: #FFDBC3;
+    font-family: 'Poppins', sans-serif;
+    background: #9F91CC;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: #9F91CC;
+}
+
+#vidas-jugador, #vidas-oponente{
+    font-size: 32px;
+    margin-bottom: 0;
+    align-content: center;
+}
+
+.atauqes-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px){
+    .tarjetas , .tarjetas-ataques{
+        flex-direction: column;
+    }
+}

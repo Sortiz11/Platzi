@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>¡BATALLA!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+    <body>
+        
+        <section id= "SelPersonaje">
+            
+            <h1 class="titulo"> ¡Batalla!</h1>
+            
+            <h2 class="subtitulo">Selecciona a tu Personaje</h2>
+            
+            <div class="tarjetas">
+
+                <input type="radio" name="Personaje" id="Moises" >
+                <label class="tarjeta-personaje" for="Moises">
+                    <p> Miss Fire</p>
+                    <img src="./assets/Mr_Fire.png" alt="Mr_Fire">
+                </label>
+                                
+                <input type="radio" name="Personaje" id="David" >
+                <label class="tarjeta-personaje" for="David">
+                    <p> Mr Water</p>
+                    <img src="./assets/Miss_Water.png" alt="Mss_Water">
+                </label>
+                        
+                <input type="radio" name="Personaje" id="Daniel" >
+                <label class="tarjeta-personaje" for="Daniel">
+                    <p> Stone Boy </p>
+                    <img src="./assets/Stone_Boy.png" alt="Stone_Boy">
+                </label>
+            </div>
+            <button id="Boton-Personaje">Play Now</button>
+        </section>
+
+        <section id="SelAtaque">
+            
+            <h1 class="titulo"> ¡Batalla!</h1>
+            
+            <h2 class="subtitulo">Selecciona tu Ataque</h2>
+
+            <div class="tarjetas-ataques">
+                <button id="btn-fuego" class="btn-ataque"> Fuego 🔥</button>
+                <button id="btn-agua" class="btn-ataque"> Agua 💧</button>
+                <button id="btn-tierra" class="btn-ataque"> Tierra 🌱</button>
+            </div>
+
+           
+            <div id="Mesanjes">
+                <p id="resultado"> ¡Mucha Suerte!</p>
+
+                 <Section id="Reiniciar">
+                     <button id="btn-reiniciar">Reiniciar</button>
+                </SeCtion>
+            </div>                
+            
+            <div class="ataques">
+                <div class="atauqes-jugador">
+                    <P id="vidas-jugador">3</P>
+                    <p id="personaje-jugador"></p>
+                    <div id="Ataque-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <P id="vidas-oponente">3</P>
+                    <p id="personaje-enemigo"></p>
+                    <div id="Ataque-enemigo"></div>
+                </div>
+            </div>
+        </section> 
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>
